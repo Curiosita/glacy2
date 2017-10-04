@@ -4,19 +4,53 @@ body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  min-width: 1200px;
-  text-transform: uppercase;
+  line-height: 18px;
+  min-width: 900px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #8aa294;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #ffffff;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
+ul {
+    list-style: none;
+}
+
+
+.main-navigation {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px; 
+  text-decoration: underline;
+}
+
+.main-navigation ul {
+  display: flex; 
+}
+
+.main-navigation li{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+
+.user-navigation{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;    
+}
+
+
+
+
+
+
