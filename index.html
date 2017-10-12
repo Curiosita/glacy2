@@ -16,7 +16,7 @@
 <input type="radio" id="btn-3" name="toggle">
 <div class="site-wrapper">
   <div class="content-wrapper">
-    <header class="page-header">
+    <header class="main-header">
       <div class=container-header>
         <div class=header-wrapper>
           <div class="main-logo">
@@ -28,7 +28,7 @@
                 <li>
                   <a href="catalog.html">Каталог
                   </a>
-                  <ul class="sub-navigation-list visually-hidden">
+                  <ul class="sub-navigation-list visually-hidden" >
                     <li><a href="#">Новинки</a></li>
                     <li><a href="#">Сливочное</a></li>
                     <li><a href="#">Щербеты</a></li>
@@ -205,7 +205,7 @@
                 ненужной ерунды. Честно =)
               </p>
               <form class="enter" action="https://echo.htmlacademy.ru" method="post">
-                <input class="e-mail" type="text" name="e-mail" placeholder="Электронная почта">
+                <input class="e-mail-item" type="text" name="e-mail" placeholder="Электронная почта">
                 <a class="btn-newsletters" href="#">Отправить</a>
               </form>
             </div>
@@ -213,17 +213,21 @@
         </section>
       </div>
       <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177728!2d30.32088925182033!3d59.93879686895875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1504868317694" allowfullscreen></iframe>
+        <div class="container">
         <div class="contacts">
           <p class="contacts-text">Адрес главного офиса <br> и офлайн магазина:
           </p>
-          <p class="contacts-text">ул. Большая Конюшенная <br> 19/8, Санкт-Петербург</p>
-          <span>Для заказов по телефону:</span>
-          <span>8 812 450-25-25 (с 10 до 20 ежедневно)</span>
+          <p class="contacts-address">ул. Большая Конюшенная <br> 19/8, Санкт-Петербург</p>
+          <span class="contacts-order">Для заказов по телефону:</span> <br>
+          <span class="contacts-phone">8 812 450-25-25</span> <br>
+          <span class="contacts-hours"(с 10 до 20 ежедневно)></span>
           <a class="btn-feedback" href="#">Форма обратной связи</a>
+        </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <div class="container">
         <section class="social">
           <a class="button-social button-social-tw" href=""><span class="visually-hidden">Твиттер</span></a>
