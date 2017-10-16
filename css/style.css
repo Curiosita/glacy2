@@ -68,50 +68,84 @@ ul {
   display: flex;
 }
 
-.main-navigation list {
+.main-navigation-list {
+  position: relative;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-decoration: underline;
 }
 
-.main-navigation ul {
-  display: flex;
+
+.main-navigation-list:hover .sub-navigation-list{
+    display: block;
 }
 
-.main-navigation li {
+.main-navigation ul {
   display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation li {;
   justify-content: space-between;
   margin-right: 25px;
 }
 
-.sub-navigation-list {
-  position: relative;
+.main-navigation-list a:hover {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: black;
+  background-color: #f8f7f4;
+
 }
-.sub-navigation-list::before{
-  position: absolute;
-  content: "";
-  width: 360px;
-  top: -39px;
-  left: 0;
-  height: 40px;
-}
-.sub-navigation-list:hover {
-  display: none;
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  width: 870px;
-  margin: 0 auto;
-  margin-left: -485px;
-  padding-top: 65px;
-  padding-bottom: 87px;
-  padding-left: 100px;
-  z-index: 2;
-  background-color: #ffffff;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+.main-navigation-list a:focus {
+  background-color: #f8f7f4;
+  box-shadow: 0 2px 2px #818884;
 }
 
+.main-navigation-list a:active {
+  color: #ffffff;
+  background-color: #d07058;
+}
+
+
+.sub-navigation-list {
+    display: none; 
+    position: absolute;
+    border-radius: 5px;
+}
+
+.sub-navigation-list a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #323232;
+  margin-bottom: -1px;
+  padding: 8px 14px;
+  background-color: #f8f7f4;
+  
+}
+
+.sub-navigation-list .new-items a{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px; 
+}
+
+.sub-navigation-list a:hover {
+  background-color: #fbe0db;
+}
+.sub-navigation-list a:focus {
+  opacity: 0.5;
+}
+
+.sub-navigation-list a:active {
+  opacity: 0.8;
+}
 
 
 .user-navigation {
@@ -153,7 +187,7 @@ body > input[type="radio"] {
   min-width: 900px;
 
   background-color: #849d8f;
-  background-image: url("../img/Ice 1.png");
+  background-image: url("../img/ice1.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -167,11 +201,11 @@ body > input[type="radio"] {
 }
 
 .site-wrapper::before {
-  background-image: url("../img/Ice 2.png");
+  background-image: url("../img/ice2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("../img/Ice 3.png");
+  background-image: url("../img/ice3.png");
 }
 
 .content-wrapper {
@@ -268,17 +302,17 @@ body > input[type="radio"] {
 
 #btn-1:checked ~ .site-wrapper {
   background-color: #849d8f;
-  background-image: url("../img/Ice 1.png");
+  background-image: url("../img/ice1.png");
 }
 
 #btn-2:checked ~ .site-wrapper {
   background-color: #8996a6;
-  background-image: url("../img/Ice 2.png");
+  background-image: url("../img/ice2.png");
 }
 
 #btn-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
-  background-image: url("../img/Ice 3.png");
+  background-image: url("../img/ice3.png");
 }
 
 #btn-1:checked ~ .site-wrapper label[for="btn-1"],
@@ -324,7 +358,7 @@ body > input[type="radio"] {
 }
 
 .banner-left {
-  background-image: url("../img/Raspberry theme.png");
+  background-image: url("../img/Raspberrytheme.png");
   background-position: top center;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -333,7 +367,7 @@ body > input[type="radio"] {
 }
 
 .banner-right {
-  background-image: url("../img/Shoko theme.png");
+  background-image: url("../img/Shokotheme.png");
   background-position: top center;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -376,7 +410,7 @@ body > input[type="radio"] {
   color: #323232;
   font-size: 16px;
   line-height: 22px;
-  background-image: url("../img/Waffle theme.png");
+  background-image: url("../img/Waffletheme.png");
   background-position: top center;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -399,7 +433,7 @@ body > input[type="radio"] {
 
 .news {
   display: flex;
-  background-image: url("../img/Strawbery theme.png");
+  background-image: url("../img/Strawberytheme.png");
   background-position: left;
   background-repeat: no-repeat;
   border-radius: 10px;
